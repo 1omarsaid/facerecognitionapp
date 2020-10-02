@@ -19,7 +19,7 @@ class Rank extends React.Component {
 
     resetRank = () => {
         if(this.props.entries < 1) return
-        fetch('http://localhost:5000/resetEntries',{
+        fetch('https://lit-sierra-14750.herokuapp.com/resetEntries',{
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
