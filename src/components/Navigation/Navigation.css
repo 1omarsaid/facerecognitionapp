@@ -1,0 +1,35 @@
+.navigation > p{
+    font-size: 35px;
+    width: auto;
+    cursor: pointer;
+    color: #A463F2;
+    font-weight: 600;
+}
+
+.navigation > p:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.navigation > p::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #A463F2;
+    transition: width .3s;
+}
+
+.navigation{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    height: auto;
+    padding: 10px;
+}
+
+.Tilt{
+    background: #04C8DE;
+    /* position: absolute; */
+}

@@ -1,8 +1,31 @@
 .form {
-    width: 700px;
+    /* width: 700px; */
+    width: 50%;
     background: linear-gradient(315deg, transparent 75%, #d45d55 0)-10px 0,
     linear-gradient(45deg, transparent 75%, #d45d55 0)-10px 0,
     linear-gradient(135deg, #a7332b 50%, transparent 0) 0 0,
     linear-gradient(45deg, #6a201b 50%, #561a16 0) 0 0 #561a16;
     background-size: 20px 20px;
 }
+
+
+.title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.title >p {
+    font-size: 23px;
+    font-weight: 700;
+    color: white;
+    width: 60%;
+}
+
+@media only screen and (max-width: 750px) {
+    .form{
+        width: 100%;
+    }
+  }
